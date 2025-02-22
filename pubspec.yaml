@@ -1,0 +1,35 @@
+name: family_theme_switcher
+description: "Family Theme Switcher"
+publish_to: 'none'
+version: 1.0.0
+
+environment:
+  sdk: '>=3.6.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2
+  vector_graphics: ^1.1.18
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  vector_graphics_compiler: ^1.1.16
+  very_good_analysis: ^7.0.0
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/Nunito/Nunito-Bold.ttf
+          weight: 700
+
+  assets:
+    - assets/images/
+
+    - path: assets/images/
+      transformers:
+        - package: vector_graphics_compiler
